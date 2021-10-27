@@ -31,6 +31,8 @@
 
             </Grid>
 
+            <Button x:Name="btnResumen" Text="Ver informacion de usuario" Clicked="btnResumen_Clicked" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

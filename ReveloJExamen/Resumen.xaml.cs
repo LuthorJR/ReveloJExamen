@@ -16,10 +16,13 @@ namespace ReveloJExamen
         {
             InitializeComponent();
 
-            string usercon = txtUsConec.Text;
+        }
+
+        private void btnResumen_Clicked(object sender, EventArgs e)
+        {
+            string usercon = txtUsConec.Text; 
             string shnomb = txtNombreUs.Text;
             string pagar = txtTotal.Text;
-
         }
     }
 }
