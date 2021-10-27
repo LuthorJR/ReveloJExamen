@@ -16,5 +16,18 @@ namespace ReveloJExamen
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Clicked(object sender, EventArgs e)
+        {
+            try{
+                double matricula = Convert.ToDouble(txtInicial.Text);
+                
+                double cuotas = ((1800 - matricula)/3);
+            }
+            catch (Exception ex)
+            {
+               
+            }
+        }
     }
 }
