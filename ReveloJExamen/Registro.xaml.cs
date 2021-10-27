@@ -19,11 +19,15 @@ namespace ReveloJExamen
 
         private void btnCalcular_Clicked(object sender, EventArgs e)
         {
-            var abono = double.Parse(txtInicial.Text);
-            var diferencia = 1800 - abono;
-            var cuota = diferencia / 3;
-            txtMensual.Text = cuota.ToString();
-
+            if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtInicial.Text))
+                {
+                var abono = double.Parse(txtInicial.Text);
+                var diferencia = 1800 - abono;
+                var cuota = (diferencia / 3)*1.05;
+                txtMensual.Text = cuota.ToString();
+            }
+            else
+                DisplayAlert("Error", "No se ha introducido datos", "ok");
             
         }
     }

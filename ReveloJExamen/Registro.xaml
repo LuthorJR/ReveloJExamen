@@ -32,9 +32,10 @@
             </Grid>
 
             <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
+
             
-            <Button x:Name="btnResumen" Text="Resumen de Inscripcion" Clicked="btnCalcular_Clicked"/>
             
+
         </StackLayout>
             
     </ContentPage.Content>

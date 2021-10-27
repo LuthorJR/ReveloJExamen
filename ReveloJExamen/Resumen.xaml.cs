@@ -15,6 +15,11 @@ namespace ReveloJExamen
         public Resumen()
         {
             InitializeComponent();
+
+            string usercon = txtUsConec.Text;
+            string shnomb = txtNombreUs.Text;
+            string pagar = txtTotal.Text;
+
         }
     }
 }
