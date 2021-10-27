@@ -30,5 +30,10 @@ namespace ReveloJExamen
                 DisplayAlert("Error", "No se ha introducido datos", "ok");
             
         }
+
+        private async void btnIrResumen_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Resumen( ));
+        }
     }
 }
