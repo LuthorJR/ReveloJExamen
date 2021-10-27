@@ -133,4 +133,10 @@
       <Name>ReveloJExamen</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Wallpaper.png" />
+  </ItemGroup>
 </Project>
