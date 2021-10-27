@@ -19,18 +19,17 @@ namespace ReveloJExamen
 
         private void btnRegistro_Clicked(object sender, EventArgs e)
         {
-
                 string usuario = txtUsuario.Text;
                 string clave = txtClave.Text;
 
-                if ((usuario == "estudiante2021") && (clave == "uisrael2021"))
-                {
-                   Navigation.PushAsync(new Registro(usuario, clave));
+               if ((usuario == "estudiante2021") && (clave == "uisrael2021"))
+               {
+                   Navigation.PushAsync(new Registro());
                 }
-                else
-                {
-                    lblMensaje.Text = "El usuario o la clave son incorrectos";
-                }
+            
+              else{
+                 lblMensaje.Text = "El usuario o la clave son incorrectos";
+              }
 
         }
     }
