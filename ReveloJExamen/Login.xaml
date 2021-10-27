@@ -16,9 +16,10 @@
                 <Image Grid.Row="0" Source="app.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
 
                 <StackLayout Grid.Row="1" Padding="30,20">
-                    <Entry Placeholder="Usuario" PlaceholderColor="White" />
-                    <Entry Placeholder="Contraseña" PlaceholderColor="White" IsPassword="True"/>
-                    <Button Text="Iniciar Registro" BackgroundColor="White" />
+                    <Entry x:Name="txtUsuario"  Placeholder="Ingrese Usuario" TextColor="WhiteSmoke" PlaceholderColor="White" />
+                    <Entry x:Name="txtClave" Placeholder="Ingrese Contraseña" TextColor="WhiteSmoke" PlaceholderColor="White" IsPassword="True"/>
+                    <Button x:Name="btnRegistro" Text="Iniciar Registro" BackgroundColor="White" Clicked="btnRegistro_Clicked"/>
+                    <Label x:Name="lblMensaje" Text="" TextColor="Red"/>
                 </StackLayout>
             </Grid>
         </Grid>
