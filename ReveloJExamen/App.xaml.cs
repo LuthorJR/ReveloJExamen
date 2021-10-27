@@ -10,7 +10,7 @@ namespace ReveloJExamen
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new  Login());
+            MainPage = new NavigationPage(new Login());
         }
 
         protected override void OnStart()

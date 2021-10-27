@@ -17,14 +17,14 @@ namespace ReveloJExamen
             InitializeComponent();
         }
 
-        private void btnRegistro_Clicked(object sender, EventArgs e)
+        private async void btnRegistro_Clicked(object sender, EventArgs e)
         {
                 string usuario = txtUsuario.Text;
                 string clave = txtClave.Text;
 
                if ((usuario == "estudiante2021") && (clave == "uisrael2021"))
                {
-                   Navigation.PushAsync(new Registro());
+                   await Navigation.PushAsync(new Registro());
                 }
             
               else{
