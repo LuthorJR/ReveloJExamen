@@ -4,7 +4,8 @@
              x:Class="ReveloJExamen.Login">
     <ContentPage.Content>
         <Grid>
-            <Image Source="Wallpaper.jpg" Aspect="AspectFill"/>
+            <Image Source="Wallpaper.png" Aspect="AspectFill"/>
+            <BoxView Color="Black"/>
             
             <Grid>
                 <Grid.RowDefinitions>
@@ -13,7 +14,7 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <Image Grid.Row="0" Source="app.png" WidthRequest="100" HeightRequest="100" Margin="0,50,0,30"/>
+                <Image Grid.Row="0" Source="Logo.png" WidthRequest="200" HeightRequest="100" />
 
                 <StackLayout Grid.Row="1" Padding="30,20">
                     <Entry x:Name="txtUsuario"  Placeholder="Ingrese Usuario" TextColor="WhiteSmoke" PlaceholderColor="White" />
