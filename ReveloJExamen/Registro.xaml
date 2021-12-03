@@ -23,16 +23,15 @@
                 <Label Text="Ingrese su nombre" Grid.Row="0" Grid.Column="0" />
                 <Entry x:Name="txtNombre" Keyboard="Text" Grid.Row="0" Grid.Column="1"/>
 
-                <Label Text="Pago Inicial" Grid.Row="1" Grid.Column="0"/>
-                <Entry x:Name="txtInicial" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" />
+                <Label Text="Ingrese su usuario" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtUsuario" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" />
 
-                <Label Text=" Su Pago Mensual es" Grid.Row="2" Grid.Column="0" />
-                <Entry x:Name="txtMensual" IsEnabled="False" Grid.Row="2" Grid.Column="1"/>
+                <Label Text="Ingrese la contrasenia" Grid.Row="2" Grid.Column="0" />
+                <Entry x:Name="txtContrasenia" IsPassword="True" Grid.Row="2" Grid.Column="1"/>
 
             </Grid>
 
-            <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked"/>
-            <Button x:Name="btnIrResumen" Text="Ver Resumen" Clicked="btnIrResumen_Clicked" />
+            <Button x:Name="btnAgregar" Text="Agregar" Clicked="btnAgregar_Clicked"
 
 
 

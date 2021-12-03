@@ -47,7 +47,7 @@ namespace ReveloJExamen
 
         private void btnRegistro_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Registro());
         }
     }
 }

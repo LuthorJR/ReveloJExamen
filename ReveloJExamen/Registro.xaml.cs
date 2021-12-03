@@ -6,34 +6,34 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SQLite;
+using ReveloJExamen.Models;
 
 namespace ReveloJExamen
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registro : ContentPage
     {
+        private SQLiteAsyncConnection con;
+        
         public Registro()
         {
             InitializeComponent();
+            con = DependencyService.Get<DataBase>().GetConnection();
         }
 
-        private void btnCalcular_Clicked(object sender, EventArgs e)
+        private void btnAgregar_Clicked(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtInicial.Text))
-                {
-                var abono = double.Parse(txtInicial.Text);
-                var diferencia = 1800 - abono;
-                var cuota = (diferencia / 3)*1.05;
-                txtMensual.Text = cuota.ToString();
+            try {
+                var Registros = new Estudiante { Nombre = txtNombre.Text, Usuario = txtUsuario.Text, Contrasenia = txtContrasenia.Text };
+                    con.InsertAsync(Registros);
+                    DisplayAlert("Alerta", "Dato Ingresado", "Ok");
+                txtNombre.Text = "";
+                txtContrasenia.Text = "";
+                txtUsuario.Text = "";
             }
-            else
-                DisplayAlert("Error", "No se ha introducido datos", "ok");
-            
-        }
-
-        private async void btnIrResumen_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Resumen( ));
+            catch (Exception ex) { 
+            }
         }
     }
 }
