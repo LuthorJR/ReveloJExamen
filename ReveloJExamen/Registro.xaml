@@ -31,7 +31,7 @@
 
             </Grid>
 
-            <Button x:Name="btnAgregar" Text="Agregar" Clicked="btnAgregar_Clicked"
+            <Button x:Name="btnAgregar" Text="Agregar" Clicked="btnAgregar_Clicked"/>
 
 
 
