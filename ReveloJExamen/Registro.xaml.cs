@@ -27,7 +27,7 @@ namespace ReveloJExamen
             try {
                 var Registros = new Estudiante { Nombre = txtNombre.Text, Usuario = txtUsuario.Text, Contrasenia = txtContrasenia.Text };
                     con.InsertAsync(Registros);
-                    DisplayAlert("Alerta", "Dato Ingresado", "Ok");
+                    DisplayAlert("Alerta", "Registro Correcto", "Ok");
                 txtNombre.Text = "";
                 txtContrasenia.Text = "";
                 txtUsuario.Text = "";

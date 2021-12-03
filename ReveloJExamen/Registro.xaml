@@ -24,7 +24,7 @@
                 <Entry x:Name="txtNombre" Keyboard="Text" Grid.Row="0" Grid.Column="1"/>
 
                 <Label Text="Ingrese su usuario" Grid.Row="1" Grid.Column="0"/>
-                <Entry x:Name="txtUsuario" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" />
+                <Entry x:Name="txtUsuario" Keyboard="Text" Grid.Row="1" Grid.Column="1" />
 
                 <Label Text="Ingrese la contrasenia" Grid.Row="2" Grid.Column="0" />
                 <Entry x:Name="txtContrasenia" IsPassword="True" Grid.Row="2" Grid.Column="1"/>
