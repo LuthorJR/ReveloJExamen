@@ -34,7 +34,7 @@ namespace ReveloJExamen
                 db.CreateTable<Estudiante>();
                 IEnumerable<Estudiante> resultado = SELECT_WHERE(db, txtUsuario.Text, txtContrasenia.Text);
                 if (resultado.Count() > 0){
-                    Navigation.PushAsync(new Registro());
+                    Navigation.PushAsync(new Resumen());
                 }
                 else {
                     DisplayAlert("Atencion", "para ingresar, por favor registrarse", "ok");

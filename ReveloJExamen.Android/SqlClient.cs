@@ -16,7 +16,7 @@ using ReveloJExamen.Droid;
 
 namespace ReveloJExamen.Droid
 {
-    class SqlClient : DataBase
+    internal class SqlClient : SqlClientBase, ReveloJExamen.DataBase
     {
         public SQLiteAsyncConnection GetConnection()
         {

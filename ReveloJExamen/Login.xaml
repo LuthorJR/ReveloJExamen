@@ -19,8 +19,8 @@
                 <StackLayout Grid.Row="1" Padding="30,20">
                     <Entry x:Name="txtUsuario"  Placeholder="Ingrese Usuario" TextColor="WhiteSmoke" PlaceholderColor="White" />
                     <Entry x:Name="txtContrasenia" Placeholder="Ingrese Contraseña" TextColor="WhiteSmoke" PlaceholderColor="White" IsPassword="True"/>
-                    <Button x:Name="btnRegistro" Text="Iniciar Registro" BackgroundColor="White" Clicked="btnRegistro_Clicked"/>
-                    <Button x:Name="btnIniciar" Text="iniciar Sesion" BackgroundColor="White" Clicked="btnIniciar_Clicked"/>
+                    <Button x:Name="btnIniciar" Text="Iniciar Sesion" BackgroundColor="White" Clicked="btnIniciar_Clicked"/>
+                    <Button x:Name="btnRegistro" Text="Registrarse" BackgroundColor="White" Clicked="btnRegistro_Clicked"/>
                     <Label x:Name="lblMensaje" Text="" TextColor="Red"/>
                 </StackLayout>
             </Grid>
